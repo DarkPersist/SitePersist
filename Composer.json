@@ -1,8 +1,14 @@
 {
     "name": "heroku/heroku-buildpack-php",
+    "descroption": "Toolkit",
+    "keywords": ["heroku","php"],
     "homepage": "https://github.com/heroku/heroku-buildpack-php",
     "type": "library",
     "license": "MIT",
+    "authors": [{
+        "name":"DarkPersist",
+        "email":""
+    }],
     "bin": [
         "bin/heroku-php-apache2",
         "bin/heroku-php-nginx"
