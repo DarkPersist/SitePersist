@@ -16,6 +16,10 @@
             font-size:1000;
         }
         
+        * { 
+            background: #001963; 
+        }
+        
     </style>
 </head>
 <body>
