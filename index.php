@@ -17,7 +17,7 @@
         }
         
         * { 
-            background: #001963; 
+            background: #18264F; 
         }
         
     </style>
