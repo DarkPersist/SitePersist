@@ -6,6 +6,6 @@
 </head>
 <body>
 <h1>En estos momentos estamos trabajando para ti</h1>
-<p>Hola Dayanna, te estamos vigilando</p>
+<p></p>
 </body>
 </html>
