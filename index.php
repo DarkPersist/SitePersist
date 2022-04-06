@@ -5,7 +5,7 @@
     <title>SitePersist</title>
     <style>
         body{
-            background:rgb(random(255),random(255),random(255));
+            background:rgb(random(25),random(55),random(255));
         }
     </style>
 </head>
