@@ -1,6 +1,6 @@
 {
     "name": "heroku/heroku-buildpack-php",
-    "descroption": "Toolkit",
+    "description": "Toolkit",
     "keywords": ["heroku","php"],
     "homepage": "https://github.com/heroku/heroku-buildpack-php",
     "type": "library",
