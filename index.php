@@ -43,7 +43,9 @@
 <h1>En estos momentos estamos trabajando para ti</h1>
 <p></p>
 <div class="parent">
-<div class="div1"> </div>
+<div class="div1"> 
+    <p> IDOLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!! </p>   
+</div>
 <div class="div2"> </div>
 <div class="div3"> </div>
 <div class="div4"> </div>
