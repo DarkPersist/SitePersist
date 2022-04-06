@@ -1,10 +1,10 @@
 {
-    "name": "heroku/heroku-buildpack-nodejs",
-    "homepage": "https://github.com/heroku/heroku-buildpack-nodejs",
+    "name": "heroku/heroku-buildpack-php",
+    "homepage": "https://github.com/heroku/heroku-buildpack-php",
     "type": "library",
     "license": "MIT",
     "bin": [
-        "bin/compile",
-        "bin/detect"
+        "bin/heroku-php-apache2",
+        "bin/heroku-php-nginx"
         ]
 }
