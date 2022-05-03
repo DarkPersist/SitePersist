@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>SitePersist</title>
-    <style>
-        body{
-            background:rgb(random(25),random(55),random(255));
-        }
-    </style>
 </head>
 <body>
-    <h1>Hola sara se donde vives, te vigilamos, te secuestraremos</h1>
+    <a href="/login"><h1>Inicio de Sesion</h1></a>
 </body>    
 </html>
