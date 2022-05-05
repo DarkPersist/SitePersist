@@ -26,7 +26,7 @@
                 box-sizing: border-box;
                 font-family: 'Poppins', sans-serif;
             }
-        </style>
+        
         .initiation {
             font-family: 'Poppins', sans-serif;
             display: flex;
@@ -402,6 +402,7 @@
                 left: 0;
             }
         }
+        </style>
     </head>
 
     <body>
