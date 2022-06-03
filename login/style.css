@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -16,7 +15,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, rgba(0,56,109,0.6), rgba(141,5,131,0.6)), url(sede-principal-IUSH.jpg) center fixed;
+    background: linear-gradient(to right,rgba(0,56,109,0.8),rgba(141,5,131,0.8)), url(201210241127.jpg) center fixed;
     background-size: 100%;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -44,6 +43,7 @@
 .initiation .logo img {
     width: 250px;
     filter: opacity(1) drop-shadow(0 0 0 rgb(255, 255, 255)) greyscale ();
+    -webkit-filter: opacity(1) drop-shadow(0 0 0 rgb(255, 255, 255)) greyscale ();
 }
 
 .initiation .container .boxMain {
@@ -78,15 +78,21 @@
     position: relative;
     display: inline-flex;
     padding: 12px 30px;
-    background: #363636;
+    background: #000;
     color: #fff;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .initiation .container .boxMain .box #btn span {
     position: relative;
     z-index: 1;
+    color: #fff;
 }
 
 .initiation .container .boxMain .box #btn::before {
@@ -106,7 +112,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: #A8E0E6;
+    background: #8d0583b3;
     transition: width 1s, height 1s;
     -webkit-transition: width 1s, height 1s;
     -moz-transition: width 1s, height 1s;
@@ -133,7 +139,7 @@
     top: 0;
     width: 50%;
     height: 100%;
-    background: #a8e0e6;
+    background: #00386d;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -193,7 +199,7 @@
 
 .initiation .container .formBx .form form h3 {
     font-size: 1.5em;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -267,25 +273,35 @@
 .initiation .container .formBx .form form input[id="submitIn"] {
     max-width: 100px;
     border-color: #363636;
-    background: #1A5276;
+    background: #8d0583b3;
     color: #fff;
     cursor: pointer;
-    box-shadow: 0 0 1px 0 #363636 inset;
+    box-shadow: 0 0 1px 0 #8d0583b3 inset;
+    border-radius: 10px;
     transition: 0.8s ease-in-out;
     -webkit-transition: 0.8s ease-in-out;
     -moz-transition: 0.8s ease-in-out;
     -ms-transition: 0.8s ease-in-out;
     -o-transition: 0.8s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .initiation .container .formBx .form form input[class="disabled"],
 .initiation .container .formBx .form form input[class="disabled"] {
-    background: #363636;
+    border-color: #182a4d ;
+    background: #8d0583;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 1px 0 #8d0583 inset;
     color: #fff;
     cursor: default;
 }
 
 .initiation .container .formBx .form form .terms {
+    color: #fff;
     white-space: nowrap;
     margin: auto;
 }
@@ -296,16 +312,12 @@
 
 .initiation .container .formBx .form form .terms a {
     text-decoration: none;
-    color: #1A5276;
+    color: #8d0583;
 }
 
-.terms a {
-    text-decoration: none;
-    color: #1A5276;
-}
 
 .initiation .container .formBx .form form .forgot {
-    color: #333;
+    color: #fff;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -314,7 +326,7 @@
 }
 
 .initiation .container .formBx .form form .forgot:hover {
-    color: #467A84;
+    color: #8d0583;
 }
 
 .initiation .container .formBx .form form .icon {
