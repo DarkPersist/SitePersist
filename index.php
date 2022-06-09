@@ -5,6 +5,6 @@
     <title>SitePersist</title>
 </head>
 <body>
-    <a href="/login"><h1>Inicio de Sesion</h1></a>
+    <a href="/login/index.html"><h1>Inicio de Sesion</h1></a>
 </body>    
 </html>
