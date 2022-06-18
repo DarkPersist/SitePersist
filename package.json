@@ -25,6 +25,6 @@
   "homepage": "https://github.com/DarkPersist/SitePersist#readme",
 
   "engines": {
-    "node": "18.4.0"
+    "node": "6.11.1"
   }
 }
