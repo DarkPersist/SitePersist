@@ -1,30 +1,26 @@
 {
   "name": "sitepersist",
   "version": "1.0.0",
-  "description": "Sistema de Reservaciones",
+  "engines": {
+    "node": "6.11.4",
+    "npm":"3.10.10"
+  },
+  "description": "sistema de reservas",
   "main": "index.js",
   "scripts": {
-    "build": "bower install && grunt build",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DarkPersist/SitePersist.git"
   },
-  "keywords": [
-    "Sistema",
-    "Reservaciones",
-    "IUSH",
-    "SENA"
-  ],
-  "author": "Sebastian, Mateo",
+  "author": "sebastian y mateo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DarkPersist/SitePersist/issues"
   },
   "homepage": "https://github.com/DarkPersist/SitePersist#readme",
-
-  "engines": {
-    "node": "6.11.1"
+  "dependencies": {
+    "sweetalert2": "^11.4.17"
   }
 }
