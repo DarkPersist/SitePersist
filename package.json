@@ -1,14 +1,8 @@
 {
   "name": "sitepersist",
   "version": "1.0.0",
-  "description": "- es un sistema de reservaciones para la IUSH",
+  "description": "Sistema de Reservaciones",
   "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
-  "dependencies": {
-    
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/DarkPersist/SitePersist.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Sistema",
+    "Reservaciones",
+    "IUSH",
+    "SENA"
+  ],
+  "author": "Sebastian, Mateo",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DarkPersist/SitePersist/issues"
   },
-  "homepage": "https://github.com/DarkPersist/SitePersist#readme"
+  "homepage": "https://github.com/DarkPersist/SitePersist#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
