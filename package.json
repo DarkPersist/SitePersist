@@ -19,17 +19,9 @@
   },
   "homepage": "https://github.com/DarkPersist/SitePersist#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.5",
-    "babel-preset-react": "^6.24.1",
-    "nodemon": "^2.0.16",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "webpack": "^5.73.0",
-    "webpack-dev-middleware": "^5.3.3"
+    "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "express": "^4.18.1",
     "sweetalert2": "^11.4.17"
   }
 }
