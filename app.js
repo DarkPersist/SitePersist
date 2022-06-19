@@ -1,10 +1,7 @@
 const express = require('express');
 const server = express();
 
-server.get('/',function(req, res){
-    res.sendFile(__dirname+'/public/index.html')
-    res.end();
-});
+server.use(express.static('public'));
 
 const PORT=process.env.PORT || 3000;
 server.listen(PORT);
