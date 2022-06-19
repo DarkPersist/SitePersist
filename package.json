@@ -2,8 +2,8 @@
   "name": "sitepersist",
   "version": "1.0.0",
   "engines": {
-    "node": "6.11.4",
-    "npm":"3.10.10"
+    "node": "^6.11.4",
+    "npm":"^3.10.10"
   },
   "description": "sistema de reservas",
   "main": "index.js",
