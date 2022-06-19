@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 
 server.get('/',function(req, res){
-    res.sendFile('./public/index.html')
+    res.sendFile(__dirname+'/public/index.html')
     res.end();
 });
 
