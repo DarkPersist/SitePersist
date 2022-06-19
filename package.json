@@ -1,0 +1,24 @@
+{
+  "name": "sitepersist",
+  "version": "1.0.0",
+  "description": "Sistema de Reservaciones",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkPersist/SitePersist.git"
+  },
+  "author": "Sebastian Lopez Osorno , Mateo Londoño Bustamante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkPersist/SitePersist/issues"
+  },
+  "homepage": "https://github.com/DarkPersist/SitePersist#readme",
+  "dependencies": {
+    "sweetalert2": "^11.4.17"
+  }
+}
