@@ -1,1 +1,5 @@
-console.log("Escuchando en el puerto:  ",process.env.PORT);
+const http = require('http');
+
+http.createServer(function (req, res){
+    res.write('<h1>hola mundo</h1>');
+});
