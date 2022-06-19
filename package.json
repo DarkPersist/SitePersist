@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/DarkPersist/SitePersist#readme",
   "dependencies": {
+    "nodemon": "^2.0.16",
     "sweetalert2": "^11.4.17"
   }
 }
