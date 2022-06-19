@@ -1,7 +1,13 @@
 const express = require('express');
-const server = express();
+const ejs = require('ejs');
+const app = express();
+const path= require('path');
 
-server.use(express.static('public'));
+app.engine('.ejs', ejs.__express)
+app.set('views', __dirname + '/public')
+app.use(express.static(__dirname + '/public'));
+app.set('view engine','ejs');
+
 
 const PORT=process.env.PORT || 3000;
-server.listen(PORT);
+app.listen(PORT);
