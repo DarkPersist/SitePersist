@@ -1,8 +1,8 @@
 const express = require('express');
 const server = express();
 
-server.get('/public',function(req, res){
-    res.send("<h1>hola mundo</h1>");
+server.get('/',function(req, res){
+    res.sendFile('./public/index.html')
     res.end();
 });
 
