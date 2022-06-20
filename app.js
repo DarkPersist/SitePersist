@@ -1,12 +1,23 @@
 const express = require('express');
 const ejs = require('ejs');
 const app = express();
-const path= require('path');
 
-app.engine('.ejs', ejs.__express)
-app.set('views', __dirname + '/public')
-app.use(express.static(__dirname + '/public'));
 app.set('view engine','ejs');
+app.use(express.static('public'));
+
+//Rutas de Acceso
+app.get('/', function(req, res){
+    res.render('welcome');
+});
+
+app.get('/IUSH', function(req, res){
+    res.render('IUSH/welcome');
+});
+
+app.get('/IUSH/login', function(req, res){
+    res.render('IUSH/login');
+});
+
 
 
 const PORT=process.env.PORT || 3000;
