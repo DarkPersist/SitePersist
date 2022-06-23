@@ -14,8 +14,12 @@ app.get('/IUSH', function(req, res){
     res.render('IUSH/welcome');
 });
 
-app.get('/IUSH/login', function(req, res){
-    res.render('IUSH/login');
+app.get('/IUSH/login1', function(req, res){
+    res.render('IUSH/login1');
+});
+
+app.get('/IUSH/login2', function(req, res){
+    res.render('IUSH/login2');
 });
 
 
