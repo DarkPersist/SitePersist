@@ -4,10 +4,11 @@
 <head>
     <%- include('partials/meta'); %>
     <link rel="stylesheet" href="welcome/css/style.css">
+    
 </head>
 <body>
-    <h1><a href="/IUSH">Entrar a la IUSH</a></h1>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.18/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"></script>
     <script type="text/javascript">
     Swal.fire({
         title: '<strong>Estamos en Mantenimiento</u></strong>',
@@ -19,5 +20,34 @@
         showCancelButton: true,
     })
     </script>
+    <header>
+        <a href="#" class="logo">SitePersist</a>
+        <ul class="navigation">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Buscar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Sistema de reservaciones</h2>
+            <p>Actualmente en la IUSH existe un sistema interno para gestionar las reservas de 
+            espacios, la cual no cuenta con una interacción con el usuario, además de no ser 
+            viable para reservas de personal externo a la IUSH. Para esto se propone Aplicativo 
+            web con diseño responsive para todo tipo de dispositivos, con diferentes perfiles de 
+            usuario que permita hacer el registro de solicitudes con la finalidad de ser gestionado
+            por un administrador, con registro de solicitudes que permita graficar el uso de los 
+            espacios y equipos tecnológicos de la IUSH. </p>
+            <a href="IUSH/">Ir a la IUSH</a>
+        </div>
+        <img src="welcome/img/IUSH.png" class="image">
+    </div>
 </body>
 </html>
