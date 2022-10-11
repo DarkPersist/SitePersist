@@ -1,3 +1,3 @@
 <?php
-    header('Location:  /public/es/');
+    header('Location:  public');
 ?>
