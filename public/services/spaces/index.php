@@ -10,7 +10,7 @@
     <div class="container-xxl">
         <div class="grid text-center ">
             <div class="mb-5 mt-5">
-                <h1>Equipos</h1>
+                <h1>Espacios</h1>
             </div>
             <div class="mb-5">
                 <div class="row">
