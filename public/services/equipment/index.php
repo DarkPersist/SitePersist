@@ -14,7 +14,8 @@
             </div>
             <div class="mb-5">
                 <div class="row">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    
+                    <div class="col-md-4 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem;">
                             <img src="http://es.pecc-mexico.org/wp-content/uploads/2020/11/d437da2a54918895cf59a3362a0099ec-album-de-fotos-plano-icono-by-vexels.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -24,7 +25,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem;">
                             <img src="http://es.pecc-mexico.org/wp-content/uploads/2020/11/d437da2a54918895cf59a3362a0099ec-album-de-fotos-plano-icono-by-vexels.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -34,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem;">
                             <img src="http://es.pecc-mexico.org/wp-content/uploads/2020/11/d437da2a54918895cf59a3362a0099ec-album-de-fotos-plano-icono-by-vexels.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -48,7 +49,7 @@
             </div>
             <div class="mb-5">
                 <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem;">
                             <img src="http://es.pecc-mexico.org/wp-content/uploads/2020/11/d437da2a54918895cf59a3362a0099ec-album-de-fotos-plano-icono-by-vexels.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -58,7 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem;">
                             <img src="http://es.pecc-mexico.org/wp-content/uploads/2020/11/d437da2a54918895cf59a3362a0099ec-album-de-fotos-plano-icono-by-vexels.png" class="card-img-top" alt="...">
                             <div class="card-body">

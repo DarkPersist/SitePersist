@@ -7,3 +7,4 @@
     <?php include "../../resources/partials/header--default.html"?>
 </body>
 </html>
+</html>
