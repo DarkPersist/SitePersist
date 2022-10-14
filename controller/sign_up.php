@@ -1,5 +1,4 @@
 <?php
-function signup($conexion){
         if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['passwordcheck'])) {
             if (verifyemail($_POST['email'])==1) {
                 if ($_POST['password'] == $_POST['passwordcheck']) {
@@ -102,5 +101,3 @@ function signup($conexion){
             $GLOBALS['title'] = 'Error';
             $GLOBALS['text'] = 'Faltan datos para Registrarse';
         }
-    }
-?>

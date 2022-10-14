@@ -1,5 +1,4 @@
 <?php
-function signin($conexion){
         if (!empty($_POST['email']) && !empty($_POST['password'])) {
             $sql = 'SELECT * FROM usuarios WHERE email=:email';
             $datos = $conexion->prepare($sql);
@@ -47,5 +46,3 @@ function signin($conexion){
             $GLOBALS['title'] = 'Error';
             $GLOBALS['text'] = 'Faltan datos para Iniciar sesión';
         }
-    }
-?>

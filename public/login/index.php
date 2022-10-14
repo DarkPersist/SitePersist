@@ -16,6 +16,22 @@
         $GLOBALS['text'] = 'Ya has inciado sesión';
         $active=false;
     }
+    
+    /* Accion Solicitada que llama funcion */
+    if (!empty($_POST['action']) && $active==true) {
+        if ($_POST['action'] == 'signin') {
+            signin($conex);
+        } elseif ($_POST['action'] == 'signup') {
+            signup($conex);
+        }
+    }
+    
+    function signup($conexion){
+        include '../../controller/sign_up.php';
+    }
+    function signin($conexion){
+        include '../../controller/sign_in.php';
+    }
 ?>
 
 <!DOCTYPE html>
@@ -38,6 +54,31 @@
 </head>
 
 <body>
+    <?php if (!empty($icon) || !empty($title) || !empty($text)): ?>
+            <script type="text/javascript">
+                Sweetalert2.fire({
+                    icon:"<?php echo($icon) ?>", 
+                    title:"<?php echo($title)?>", 
+                    text:"<?php echo($text)?>",
+                    html:"<?php echo($html)?>",
+                    imageUrl:"<?php echo($img)?>",
+                    timer:"5000",
+                    timerProgressBar:"True",
+                    allowOutsideClick:"True",
+                    allowEscapeKey:"True",
+                    confirmButtonText:"Aceptar",
+                    confirmButtonColor:"#1A5276",
+                });
+            </script>
+                <?php if ($icon=="success"): ?>
+                    <script type="text/javascript">
+                        setTimeout(alertFunc, 6000);
+                        function alertFunc() {
+                            location.replace("../main");
+                        }
+                    </script>
+                <?php endif; ?>
+    <?php endif; ?>
     <!---Login-->
     <div class="initiation">
         <div class="container">

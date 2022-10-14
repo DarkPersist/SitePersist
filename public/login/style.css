@@ -287,11 +287,11 @@
 
 .initiation .container .formBx .form form input[class="disabled"],
 .initiation .container .formBx .form form input[class="disabled"] {
-    border-color: #182a4d ;
-    background: #8d0583;
+    border-color: #000000 ;
+    background: #000000;
     color: #fff;
     cursor: pointer;
-    box-shadow: 0 0 1px 0 #8d0583 inset;
+    box-shadow: 0 0 1px 0 #363636 inset;
     color: #fff;
     cursor: default;
 }
