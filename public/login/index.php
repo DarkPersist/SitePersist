@@ -1,4 +1,4 @@
-<?php
+<!--?php
     include '../../server/connection/conexion.php';
     date_default_timezone_set("America/Bogota");
     /*Sweet Alert -> Parametros */
@@ -32,7 +32,7 @@
     function signin($conexion){
         include '../../controller/sign_in.php';
     }
-?>
+?-->
 
 <!DOCTYPE html>
 <html lang="en">
