@@ -5,12 +5,10 @@
                     if (verifypassword($_POST['password'])==1) {
                         if ($_POST['terms']=="yes") {
                             if ($_POST['type']<2 && $_POST['type']>-1) {
-                                $sql = 'SELECT email FROM usuarios WHERE email = :email';
-                                $datos = $conexion->prepare($sql);
-                                $datos->bindParam(':email', $_POST['email']);
-                                if ($datos->execute()) {
+                                $sql = 'SELECT email FROM usuarios WHERE email'.$_POST['email'];
+                                if ($data = mysqli_query($conx, $sql)) {
                                     try {
-                                        $usuarios = $datos->fetch(PDO::FETCH_ASSOC);
+                                        $usuarios = mysqli_fetch_array($data);
                                         if (is_array($usuarios)) {
                                             if ($usuarios['email'] == $_POST['email']) {
                                                 $repeated = true;
