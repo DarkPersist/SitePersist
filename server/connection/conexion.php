@@ -18,4 +18,4 @@
 	} catch (mysqli_sql_exception $fail) {
 	    die('La Conexión ha sido Fallida: ' . $fail->getMessage());
 	}
-?>.
+?>

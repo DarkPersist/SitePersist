@@ -1,3 +1,23 @@
+<?php
+    include '../../server/connection/conexion.php';
+    date_default_timezone_set("America/Bogota");
+    /*Sweet Alert -> Parametros */
+    $title='';
+    $text = '';
+    $html='';
+    $icon = '';
+    $img='';
+    $active=true;
+
+    session_start();
+    if (isset($_SESSION['id'])) {
+        $GLOBALS['icon'] = 'success';
+        $GLOBALS['title'] = 'Éxito';
+        $GLOBALS['text'] = 'Ya has inciado sesión';
+        $active=false;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +33,7 @@
     <link rel="shortcut icon" href="/resources/assets/favicon.ico">
     <!--Import-->
     <script src="https://kit.fontawesome.com/5780471e07.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -84,7 +105,9 @@
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script>
+        <?php include "main.js"; ?>
+    </script>
 </body>
 
 </html>
