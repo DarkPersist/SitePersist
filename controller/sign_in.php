@@ -1,7 +1,7 @@
 <?php
         if (!empty($_POST['email']) && !empty($_POST['password'])) {
             $sql = 'SELECT * FROM usuarios WHERE email='. $_POST['email'];
-            if ($datos=mysqli_query($conx, $sql)) {
+            if ($data=mysqli_query($conx, $sql)) {
                 $usuarios = mysqli_fetch_array($data); /*Datos almacenado en Array*/
                 
                 if (is_array($usuarios)) {
