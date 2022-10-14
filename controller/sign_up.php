@@ -29,9 +29,7 @@
                                     $GLOBALS['text'] = 'No se pudo verificar la existencia de la cuenta';
                                 }
                                 if (!$repeated) {
-                                    $sql = 'INSERT INTO usuarios (id,name,lastname,direction,telephone,email,password,type,img,role,company) values (:id,:name,:lastname,:direction,:telephone,:email,:password,:type,:img,:role,:company)';
-                                    $datos = $conexion->prepare($sql);
-                                    /*Variables */
+                                     /*Variables */
                                     $id=date("mdHis");
                                     $temp=name($_POST['name']);
                                     $name=$temp[0];
@@ -44,20 +42,9 @@
                                     $img='user.png';
                                     $role='';
                                     $company='';
-                                    /*Pasar Parametros al sql */
-                                    $datos->bindParam(':id', $id);
-                                    $datos->bindParam(':name', $name);
-                                    $datos->bindParam(':lastname', $lastname);
-                                    $datos->bindParam(':direction', $direction);
-                                    $datos->bindParam(':telephone', $telephone);
-                                    $datos->bindParam(':email', $email);
-                                    $datos->bindParam(':password', $password);
-                                    $datos->bindParam(':type', $type);
-                                    $datos->bindParam(':img', $img);
-                                    $datos->bindParam(':role', $role);
-                                    $datos->bindParam(':company', $company);
-                                
-                                    if ($datos->execute()) {
+                                    $sql = 'INSERT INTO usuarios (id,name,lastname,direction,telephone,email,password,type,img,role,company) values ($id,$name,$lastname,$direction,$telephone,$email,$password,$type,$img,$role,$company)';
+                             
+                                    if ($datos = mysqli_query($conx, $sql)) {
                                         $GLOBALS['icon'] = 'success';
                                         $GLOBALS['title'] = 'Éxito';
                                         $GLOBALS['text'] = 'La cuenta ha sido creada con exito';
