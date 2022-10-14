@@ -15,4 +15,4 @@
             die('No se ha podido comprobar la sesion iniciada: ' . $fail->getMessage());
         }
     }
-?>.
+
