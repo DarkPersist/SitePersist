@@ -1,10 +1,8 @@
 <?php
         if (!empty($_POST['email']) && !empty($_POST['password'])) {
-            $sql = 'SELECT * FROM usuarios WHERE email=:email';
-            $datos = $conexion->prepare($sql);
-            $datos->bindParam(':email', $_POST['email']);
-            if ($datos->execute()) {
-                $usuarios = $datos->fetch(PDO::FETCH_ASSOC); /*Datos almacenado en Array*/
+            $sql = 'SELECT * FROM usuarios WHERE email='. $_POST['email'];
+            if ($datos=mysqli_query($conx, $sql)) {
+                $usuarios = mysqli_fetch_array($data); /*Datos almacenado en Array*/
                 
                 if (is_array($usuarios)) {
                     if (consultattempts($conexion, $usuarios['id'])<3) {
