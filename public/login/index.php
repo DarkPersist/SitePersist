@@ -1,4 +1,4 @@
-<!--?php
+<?php
     include '../../server/connection/conexion.php';
     date_default_timezone_set("America/Bogota");
     /*Sweet Alert -> Parametros */
@@ -7,7 +7,6 @@
     $html='';
     $icon = '';
     $img='';
-    $active=true;
 
     session_start();
     if (isset($_SESSION['id'])) {
@@ -18,21 +17,207 @@
     }
     
     /* Accion Solicitada que llama funcion */
-    if (!empty($_POST['action']) && $active==true) {
+    if (!empty($_POST['action'])) {
         if ($_POST['action'] == 'signin') {
-            signin($conex);
+            signin($conx);
         } elseif ($_POST['action'] == 'signup') {
-            signup($conex);
+            signup($conx);
         }
+        
     }
     
     function signup($conexion){
-        include '../../controller/sign_up.php';
+        if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['passwordcheck'])) {
+            if (verifyemail($_POST['email'])==1) {
+                if ($_POST['password'] == $_POST['passwordcheck']) {
+                    if (verifypassword($_POST['password'])==1) {
+                        if ($_POST['terms']=="yes") {
+                            if ($_POST['type']>=1 && $_POST['type']<=3) {
+                                if ($datos = mysqli_query($conexion,'SELECT email FROM usuarios WHERE email = '.$_POST['email'])) {
+                                    try {
+                                        $usuarios = mysqli_fetch_array($datos);
+                                        if (is_array($usuarios)) {
+                                            if ($usuarios['email'] == $_POST['email']) {
+                                                $repeated = true;
+                                            } else {
+                                                $repeated = false;
+                                            }
+                                        } else {
+                                            $repeated=false;
+                                        }
+                                    } catch (Exception $fail) {
+                                        $GLOBALS['icon'] = 'error';
+                                        $GLOBALS['title'] = 'Error'.$fail->getMessage();
+                                        $GLOBALS['text'] = 'No se pudo verificar la existencia de la cuenta';
+                                    }
+                                } else {
+                                    $GLOBALS['icon'] = 'error';
+                                    $GLOBALS['title'] = 'Error';
+                                    $GLOBALS['text'] = 'No se pudo verificar la existencia de la cuenta';
+                                }
+                                if (!$repeated) {
+                                    /*Variables */
+                                    $id=date("mdHis");
+                                    $temp=name($_POST['name']);
+                                    $name=$temp[0];
+                                    $lastname=$temp[1];
+                                    $email=$_POST['email'];
+                                    $password=password_hash($_POST['password'], PASSWORD_BCRYPT);/*Cifrar contraseña en hash BCRYPT */
+                                    $type=$_POST['type'];
+                            
+                                    if ($datos = mysqli_query($conexion,'INSERT INTO usuarios (id,name,lastname,email,charge) values ('.$id.$name.$lastname.$email. $type.')')) {
+                                        $GLOBALS['icon'] = 'success';
+                                        $GLOBALS['title'] = 'Éxito';
+                                        $GLOBALS['text'] = 'La cuenta ha sido creada con exito';
+                                        createtoken($conexion,$id,$password);
+                                        signin($conexion);
+                                    } else {
+                                        $GLOBALS['icon'] = 'error';
+                                        $GLOBALS['title'] = 'Error';
+                                        $GLOBALS['text'] = 'La cuenta no se pudo crear';
+                                    }
+                                } elseif ($repeated == true) {
+                                    $GLOBALS['icon'] = 'error';
+                                    $GLOBALS['title'] = 'Error';
+                                    $GLOBALS['text'] = 'El correo ' . $_POST['email'] . ' ya existe';
+                                }
+                            }else{
+                                $GLOBALS['icon'] = 'error';
+                                $GLOBALS['title'] = 'Error';
+                                $GLOBALS['text'] = 'El tipo de cargo no es correcto';
+                            }
+                        }else{
+                            $GLOBALS['icon'] = 'error';
+                            $GLOBALS['title'] = 'Error';
+                            $GLOBALS['html'] = "<p class='terms'>Debes Aceptar los <a target='blank' href='../assets/docs/Terms_and_Conditions.pdf'>terminos y condiciones</a> de la politica de proteccion de datos. Recibiras confirmacion del registro por correo electronico</p>";
+                        }
+                    }
+                }else{
+                    $GLOBALS['icon'] = 'error';
+                    $GLOBALS['title'] = 'Error';
+                    $GLOBALS['text'] = 'Las contraseñas no coinciden';
+                }
+            }else{
+                $GLOBALS['title'] = 'Error';
+                $GLOBALS['text'] = 'El correo no cumple con los parametros necesarios';
+                $GLOBALS['img'] = '../assets/components/login/src/images/estructuraemail.jpg';
+            }
+        }else{
+            $GLOBALS['icon'] = 'error';
+            $GLOBALS['title'] = 'Error';
+            $GLOBALS['text'] = 'Faltan datos para Registrarse';
+        }
     }
+    
+    
     function signin($conexion){
-        include '../../controller/sign_in.php';
+        if (!empty($_POST['email']) && !empty($_POST['password'])) {
+            if ($datos=mysqli_query($conexion, 'SELECT u.id as id,u.mail as email, s.password as password FROM usuarios u inner join seguridad s on u.id=s.user where u.mail="'.$_POST['email'].'"')) {
+                $usuarios = mysqli_fetch_array($datos); /*Datos almacenado en Array*/
+                if (is_array($usuarios)) {
+                    if ($_POST['email']==$usuarios['email']) {
+                        if (password_verify($_POST['password'], $usuarios['password'])) {
+                            $_SESSION['id'] = $usuarios['id']; /*Pasar datos a el sistema de seguridad*/
+                            $GLOBALS['icon'] = 'success';
+                            $GLOBALS['title'] = 'Éxito';
+                            $GLOBALS['text'] = 'Se ha iniciado sesión correctamente';
+                            dataentry($conexion, $usuarios['id']);
+                        } else {
+                            $GLOBALS['icon'] = 'error';
+                            $GLOBALS['title'] = 'Error';
+                            $GLOBALS['text'] = 'La contraseña es incorrecta';
+                            attempts($conexion,$usuarios['id']);
+                        }
+                    } else {
+                        $GLOBALS['icon'] = 'error';
+                        $GLOBALS['title'] = 'Error';
+                        $GLOBALS['text'] = 'El correo no coíncide con una cuenta';
+                    }
+                }else {
+                    $GLOBALS['icon'] = 'error';
+                    $GLOBALS['title'] = 'Error';
+                    $GLOBALS['text'] = 'El correo no existe';
+                }
+            }else{
+                $GLOBALS['icon'] = 'error';
+                $GLOBALS['title'] = 'Error';
+                $GLOBALS['text'] = 'No se pudo verificar si el correo existe';
+            }
+        }else{
+            $GLOBALS['icon'] = 'error';
+            $GLOBALS['title'] = 'Error';
+            $GLOBALS['text'] = 'Faltan datos para Iniciar sesión';
+        }
     }
-?-->
+    
+    
+    /* Funciones para Login */
+    
+    // Verificacion de correo con funcion '/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i' //
+    function verifyemail($email){
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)!=false){
+            return true;
+        }
+    }
+    
+    /* Verificar Contraseña */
+    function verifypassword($password){
+        if((strlen($password))>7){
+            if((preg_match_all("/[\d]/", $password))>0){
+                if((preg_match_all("/[A-Z]/", $password))>0){
+                    if((preg_match_all("/[a-z]/", $password))>0){
+                        if((preg_match_all("/[\W]/", $password))>0){
+                            return true;
+                        }else{
+                            $GLOBALS['icon'] = 'error';
+                            $GLOBALS['title'] = 'Error';
+                            $GLOBALS['text'] = 'La contraseña debe tener al menos un caracter especial';
+                            return false;
+                        }
+                    }else{
+                        $GLOBALS['icon'] = 'error';
+                        $GLOBALS['title'] = 'Error';
+                        $GLOBALS['text'] = 'La contraseña debe tener al menos una minuscula';
+                        return false;
+                    }
+                }else{
+                    $GLOBALS['icon'] = 'error';
+                    $GLOBALS['title'] = 'Error';
+                    $GLOBALS['text'] = 'La contraseña debe tener al menos una mayuscula';
+                    return false;
+                }
+            }else{
+                $GLOBALS['icon'] = 'error';
+                $GLOBALS['title'] = 'Error';
+                $GLOBALS['text'] = 'La contraseña debe tener al menos un numero';
+                return false;
+            }
+        }else{
+            $GLOBALS['icon'] = 'error';
+            $GLOBALS['title'] = 'Error';
+            $GLOBALS['text'] = 'La contraseña debe ser minimo de 8 caracteres';
+            return false;
+        }
+    }
+    
+    function createtoken($conexion,$id,$password){
+        /*Variables */
+        $token=date("ymwzntdhis");
+        $dataentry=date("o-m-d");
+        $datacreate=date("o-m-d");
+        
+        $datos = mysqli_query($conexion,'INSERT INTO seguridad (token,last_access,last_change,user,password) values ('.$token.$dataentry.$datacreate.$id.$password.')');
+        
+    }
+    
+    function dataentry($conexion,$id){
+        /*Variables */
+        $user=$id;
+        $dataentry=date("o-m-d");
+        $datos = mysqli_query($conexion,'UPDATE seguridad SET last_access='.$dataentry.'WHERE user='.$user);
+        
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
