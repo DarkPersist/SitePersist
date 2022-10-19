@@ -317,7 +317,7 @@
                             <i id="success" class="fas fa-check-circle"></i><i id="error" class="fas fa-exclamation-circle"></i><i id="warning" class="fas fa-exclamation-triangle"></i>
                         </div>
                         <a onmouseenter="habilitarIn()">
-                            <input id="submitIn" class="disabled" type="submit" value="Ingresar" disabled>
+                            <input id="submitIn" class="disabled" type="submit" value="Ingresar">
                         </a>
                         <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
                     </form>
@@ -350,7 +350,7 @@
                         </select>
                         <p class="terms"><input type="checkbox" name="terms" value="yes" required>Acepto los <a target="blank" href=" ../assets/docs/Terms_and_Conditions.pdf ">terminos y condiciones</a></p>
                         <a onmouseenter="habilitarUp()">
-                            <input id="submitUp" class="disabled" type="submit" value="Registrar" disabled>
+                            <input id="submitUp" class="disabled" type="submit" value="Registrar">
                         </a>
                     </form>
                 </div>
