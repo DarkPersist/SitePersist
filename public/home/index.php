@@ -6,7 +6,7 @@
     <style>
         .banner {
             background: rgb(141, 4, 133);
-            background: #111111;
+            background: #0D0D0D;
             padding: 200px 100px 100px;
             min-height: 100vh;
             display: flex;
