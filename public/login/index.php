@@ -33,7 +33,7 @@
                     if (verifypassword($_POST['password'])==1) {
                         if ($_POST['terms']=="yes") {
                             if ($_POST['type']>=1 && $_POST['type']<=3) {
-                                if ($datos = mysqli_query($conexion,'SELECT email FROM usuarios WHERE email = '.$_POST['email'])) {
+                                if ($datos = mysqli_query($conexion,'SELECT mail as email FROM usuarios WHERE mail = '.$_POST['email'])) {
                                     try {
                                         $usuarios = mysqli_fetch_array($datos);
                                         if (is_array($usuarios)) {
@@ -54,21 +54,25 @@
                                     $GLOBALS['icon'] = 'error';
                                     $GLOBALS['title'] = 'Error';
                                     $GLOBALS['text'] = 'No se pudo verificar la existencia de la cuenta';
+                                    $repeated=false;
                                 }
+                                
                                 if (!$repeated) {
                                     /*Variables */
-                                    $id=date("mdHis");
                                     $temp=name($_POST['name']);
                                     $name=$temp[0];
                                     $lastname=$temp[1];
                                     $email=$_POST['email'];
                                     $password=password_hash($_POST['password'], PASSWORD_BCRYPT);/*Cifrar contraseña en hash BCRYPT */
                                     $type=$_POST['type'];
-                            
-                                    if ($datos = mysqli_query($conexion,'INSERT INTO usuarios (id,name,lastname,email,charge) values ('.$id.$name.$lastname.$email. $type.')')) {
+                                    
+                                    if ($datos = mysqli_query($conexion,'INSERT INTO usuarios (name,lastname,mail,charge) values ("'.$name.'","'.$lastname.'","'.$email.'","'.$type.'")')) {
                                         $GLOBALS['icon'] = 'success';
                                         $GLOBALS['title'] = 'Éxito';
                                         $GLOBALS['text'] = 'La cuenta ha sido creada con exito';
+                                        $data = mysqli_query($conexion,"SELECT id FROM usuarios where mail='".$_POST['email']."'");
+                                        $users=mysqli_fetch_array($data);
+                                        $id=$users['id'];
                                         createtoken($conexion,$id,$password);
                                         signin($conexion);
                                     } else {
@@ -206,8 +210,7 @@
         $dataentry=date("o-m-d");
         $datacreate=date("o-m-d");
         
-        $datos = mysqli_query($conexion,'INSERT INTO seguridad (token,last_access,last_change,user,password) values ('.$token.$dataentry.$datacreate.$id.$password.')');
-        
+        $datos = mysqli_query($conexion,'INSERT INTO seguridad (token,last_access,last_change,user,password) values ("'.$token.'","'.$dataentry.'","'.$datacreate.'","'.$id.'","'.$password.'")');
     }
     
     function dataentry($conexion,$id){
@@ -216,6 +219,29 @@
         $dataentry=date("o-m-d");
         $datos = mysqli_query($conexion,'UPDATE seguridad SET last_access='.$dataentry.'WHERE user='.$user);
         
+    }
+    
+     /* Separar Nombres y Apellidos */
+    function name($name){
+        $nameC=explode(" ",$name);
+        if(count($nameC)==1){
+            $result=array($nameC[0],'');
+            return $result;
+        } elseif (count($nameC)==2){
+            $result=array($nameC[0],$nameC[1]);
+            return $result;
+        }elseif (count($nameC)==3){
+            $result=array($nameC[0],$nameC[1].' '.$nameC[2]);
+            return $result;
+        }
+        elseif (count($nameC)==4){
+            $result=array($nameC[0].' '.$nameC[1],$nameC[2].' '.$nameC[3]);
+            return $result;
+
+        }else{
+            $result=array('','');
+            return $result;
+        }
     }
 ?>
 
