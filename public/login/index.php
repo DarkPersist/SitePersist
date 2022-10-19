@@ -33,7 +33,7 @@
                     if (verifypassword($_POST['password'])==1) {
                         if ($_POST['terms']=="yes") {
                             if ($_POST['type']>=1 && $_POST['type']<=3) {
-                                if ($datos = mysqli_query($conexion,'SELECT mail as email FROM usuarios WHERE mail = '.$_POST['email'])) {
+                                if ($datos = mysqli_query($conexion,'SELECT mail as email FROM usuarios WHERE mail = "'.$_POST['email'].'"')) {
                                     try {
                                         $usuarios = mysqli_fetch_array($datos);
                                         if (is_array($usuarios)) {
@@ -217,7 +217,7 @@
         /*Variables */
         $user=$id;
         $dataentry=date("o-m-d");
-        $datos = mysqli_query($conexion,'UPDATE seguridad SET last_access='.$dataentry.'WHERE user='.$user);
+        $datos = mysqli_query($conexion,'UPDATE seguridad SET last_access="'.$dataentry.'" WHERE user='.$user);
         
     }
     

@@ -7,7 +7,7 @@
 
 <body>
     <?php include "../../resources/partials/header--default.html" ?>
-    <div class="container-xxl text-light" style="background-color: #0D0D0D;">
+    <div class="container-fluid text-light" style="background-color: #0D0D0D;">
         <div class="grid text-center ">
             <div class="mb-5">
                 <h1>Espacios</h1>

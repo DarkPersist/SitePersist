@@ -13,9 +13,9 @@ include '../../server/security/seguridad.php';
 
 <body>
     <?php include "../resources/partials/header--main.html" ?>
-    <div class="container-xxl text-light" style="background-color: #0D0D0D;">
+    <div class="container-fluid text-light" style="background-color: #0D0D0D;">
         <div class="grid text-center">
-            <div class="container mb-5">
+            <div class="container-fluid mb-5">
                 <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
                         <div class="col-md-6 px-0">
                             <h1 class="display-4 fst-italic">Sistema de Reserva</h1>
