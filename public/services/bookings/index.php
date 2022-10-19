@@ -86,6 +86,7 @@
         </div>
         <img src="/resources/assets/IUSH.png" class="image">
     </div>
+    <?php include "../../resources/partials/footer--default.html" ?>
 </body>
 
 </html>

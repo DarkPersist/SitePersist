@@ -11,6 +11,13 @@
 	$password = 'VU7ZJIPVe8';
 	$database = 'W80NGrZVyT';
 	*/
+	
+	/* Conexion en azure.com
+	$server = 'darkpersist.mariadb.database.azure.com:3306';
+	$username = 'AdminDarkPersist@darkpersist';
+	$password = '"DarkPersist"2473546';
+	$database = 'sitepersist';
+	*/
 
 	try {
 	    $conx= mysqli_connect($server,$username,$password);
