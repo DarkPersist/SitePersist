@@ -11,4 +11,6 @@
 
 💪 Desarrolladores
 
-|[<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L. </b></sub>](https://github.com/SebastianLopezOsorno-SENA) | [<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L. </b></sub>](https://github.com/Matthew1403) | :---: | :---: |
+|[<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L. </b></sub>](https://github.com/SebastianLopezOsorno-SENA) 
+|[<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L. </b></sub>](https://github.com/Matthew1403) 
+| :---: | :---: |
