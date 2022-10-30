@@ -1,6 +1,23 @@
+<div align="center">
 
 # SitePersist
 
+<a href="https://github.com/ColombiaPython">
+  <img width="300" src="assets/static/images/about-us.jpg">
+</a>
+
+[![Build Status][build-badge]][build]
+[![MIT License][license-badge]][LICENSE]
+[![Python Status](https://img.shields.io/badge/Python-%3E%3D3.5-blue.svg?longCache=true&style=flat-square)](https://www.python.org/)
+[![PRs Welcome][prs-badge]][prs] 
+[![GitHub issues](https://img.shields.io/github/issues/ColombiaPython/sitio-web.svg?style=flat-square)](https://github.com/ColombiaPython/sitio-web/issues)
+[![Twitter Jopmi](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/ColombiaPython)
+
+Este es el repositorio del sitio web de la comunidad servido por
+[Github](https://colombiapython.github.io/sitio-web-desarrollo/), y
+construido utilizando [lektor](https://www.getlektor.com). Se utilizó la plantilla [Editorial](https://html5up.net/editorial) como base.
+
+</div>
 ## Tecnologias Implementadas
 
 - apache (2.4.54) 
