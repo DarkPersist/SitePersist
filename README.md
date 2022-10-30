@@ -2,7 +2,7 @@
 
 # SitePersist
 
-<a href="https://github.com/ColombiaPython">
+<a href="">
   <img width="300" src="assets/static/images/about-us.jpg">
 </a>
 
