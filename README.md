@@ -32,6 +32,10 @@ construido utilizando [lektor](https://www.getlektor.com). Se utilizó la planti
 |[<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L.</b></sub>](https://github.com/SebastianLopezOsorno-SENA) | [<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L.</b></sub>](https://github.com/Matthew1403) |
 | :---: | :---: |
 
+# 📑 Guía de Uso
+
+A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Sitio Web](./GUIA.md) ya que algunos contenidos tienen reglas especiales para poder ser agregados.
+
 
 # Actividad
 
