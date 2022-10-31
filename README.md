@@ -18,6 +18,7 @@ Este es el repositorio del sitio web de la comunidad servido por
 construido utilizando [lektor](https://www.getlektor.com). Se utilizó la plantilla [Editorial](https://html5up.net/editorial) como base.
 
 </div>
+
 ## Tecnologias Implementadas
 
 - apache (2.4.54) 
