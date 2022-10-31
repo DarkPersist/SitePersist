@@ -30,3 +30,18 @@ construido utilizando [lektor](https://www.getlektor.com). Se utilizó la planti
 
 |[<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L.</b></sub>](https://github.com/SebastianLopezOsorno-SENA) | [<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L.</b></sub>](https://github.com/Matthew1403) |
 | :---: | :---: |
+
+
+Actividad
+
+# Sebastian.L
+
+
+[![Sebastián López Osorno's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=SebastianLopezOsorno-SENA&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/SebastianLopezOsorno-SENA#gh-dark-mode-only)
+[![Sebastián López Osorno's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=SebastianLopezOsorno-SENA&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/SebastianLopezOsorno-SENA#gh-light-mode-only)
+
+# Mateo.L
+
+
+[![Sebastián López Osorno's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=SebastianLopezOsorno-SENA&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/SebastianLopezOsorno-SENA#gh-dark-mode-only)
+[![Sebastián López Osorno's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=SebastianLopezOsorno-SENA&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/SebastianLopezOsorno-SENA#gh-light-mode-only)
