@@ -12,11 +12,17 @@
 	$database = 'W80NGrZVyT';
 	*/
 	
-	/* Conexion en azure.com*/
+	/* Conexion en azure.com
 	$server = 'darkpersist.mariadb.database.azure.com:3306';
 	$username = 'AdminDarkPersist@darkpersist';
 	$password = '"DarkPersist"2473546';
-	$database = 'sitepersist';
+	$database = 'sitepersist';*/
+
+	/* Conexion en Clever Cloud*/
+	$server = 'brsebv2xscv11gd8urzz-mysql.services.clever-cloud.com:3306';
+	$username = 'uanrhhwd5slmn6ra';
+	$password = '1fOQx5r7VQcVxNowktFc';
+	$database = 'brsebv2xscv11gd8urzz';
 	
 
 	try {
