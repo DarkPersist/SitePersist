@@ -84,7 +84,7 @@
                 espacios y equipos tecnológicos de la IUSH. </p>
             <a href="IUSH/">Ir a la IUSH</a>
         </div>
-        <img src="/resources/assets/IUSH.png" class="image">
+        <img src="/resources/assets/img/IUSH.png" class="image">
     </div>
     <?php include "../../resources/partials/footer--default.html" ?>
 </body>

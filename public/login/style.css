@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right,rgba(0,56,109,0.8),rgba(141,5,131,0.8)), url(/resources/assets/background.jpg) center fixed;
+    background: linear-gradient(to right,rgba(0,56,109,0.8),rgba(141,5,131,0.8)), url(/resources/assets/img/background.jpg) center fixed;
     background-size: 100%;
     transition: 0.5s;
     -webkit-transition: 0.5s;
