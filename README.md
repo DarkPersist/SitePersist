@@ -63,3 +63,4 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 # DataBase Diagram
 
 [Direct Link to Diagram](https://dbdiagram.io/embed/634f6f5a4709410195902535)
+![Diagrama de Base de Datos](/docs/SitePersist.png){width='100' height='100'}
