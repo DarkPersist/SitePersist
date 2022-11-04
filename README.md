@@ -62,5 +62,4 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 
 # DataBase Diagram
 
-<iframe width="560" height="315" src='https://dbdiagram.io/embed/634f6f5a4709410195902535'> </iframe>
-[![](vid_placeholder_1.png)](https://dbdiagram.io/embed/634f6f5a4709410195902535)
+[Direct Link to Diagram](https://dbdiagram.io/embed/634f6f5a4709410195902535)
