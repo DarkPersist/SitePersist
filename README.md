@@ -22,6 +22,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 
 # Architecture & Infrastructure map
 
+[Direct Link to Map](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png)
 ![Mapa de Developing](/docs/developing.png)
 ## Developing
 
