@@ -13,7 +13,7 @@ SitePersist
 
 💻 Desarrolladores
 
-| [`<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/>`<br />`<sub><b>`Sebastian L.`</b></sub>`](https://github.com/SebastianLopezOsorno-SENA) | [`<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/>`<br />`<sub><b>`Mateo L.`</b></sub>`](https://github.com/Matthew1403) |
+| [<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L.</b></sub>](https://github.com/SebastianLopezOsorno-SENA) | [<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L.</b></sub>](https://github.com/Matthew1403) |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 # 📑 Guía de Uso
@@ -22,7 +22,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 
 # Architecture & Infrastructure map
 
-![Mapa de Developing]([/docs/SitePersist.png](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png))
+![Mapa de Developing](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png)
 ## Developing
 
 
