@@ -22,6 +22,14 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 
 # Architecture & Infrastructure map
 
+![Mapa de Developing]([/docs/SitePersist.png](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png))
+## Developing
+
+
+## Staging
+
+## Produccion
+
 # User Story Mapping
 
 # SiteMap
@@ -31,4 +39,4 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 # DataBase Diagram
 
 [Direct Link to Diagram](https://dbdiagram.io/embed/634f6f5a4709410195902535)
-![Diagrama de Base de Datos](/docs/SitePersist.png)
+![Diagrama de Base de Datos](/docs/diagram.png)
