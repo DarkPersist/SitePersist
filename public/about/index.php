@@ -75,8 +75,8 @@
     <?php include "../resources/partials/header--default.html" ?>
     <div class="banner">
         <div class="content">
-            <h2>Sistema de reservas SitePersist</h2>
-            <p>Es un sistema de gestión de solicitudes para reserva de los espacios y equipos tecnológicos de la IUSH, a través de un aplicativo web para cualquier tipo de dispositivos, 
+            <h2>SitePersist</h2>
+            <p>Somos un proyecto en pro al sistema de gestión de solicitudes para reserva de los espacios y equipos tecnológicos de la IUSH, dandole uso a través de un aplicativo web para cualquier tipo de dispositivos, 
                 permitiendo la optimización de procesos de reservas de la universidad.
   </p>
             <a href="IUSH/">Ir a la IUSH</a>
