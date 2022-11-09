@@ -75,8 +75,8 @@
     <?php include "../resources/partials/header--default.html" ?>
     <div class="banner">
         <div class="content">
-            <h2>¡Bienvenidos a SitePersist!</h2>
-            <h3 class="text-light">¿Qué es SitePersist?</h3>
+            <h2>¡Bienvenidos a SitePersist!</h2> <br>
+            <h3 class="text-light">¿Qué es SitePersist?</h3><br>
             <p>SitePersist es un sistema de gestión de solicitudes para reserva de espacios y equipos tecnológicos enfocada a la Institución Universitaria Salazar y Herrera, 
                 a través de un aplicativo web para cualquier tipo de dispositivos, permitiendo de esta manera la optimización de procesos de reservas de la Universidad.
  </p>
