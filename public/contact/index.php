@@ -81,7 +81,7 @@
                 SitePersist es simplicidad; un basico imprescindible que entiende que las gestiones se pueden hacer con claridad y orden al mismo tiempo.
                 Por esto, nos dedicamos a pensar en la institución de hoy, para brindar herramientas de alta utilidad para sus procesos internos.
             </p>
-            <a href="IUSH/">Ir a la IUSH</a>
+            <a href="https://www.iush.edu.co/">Ir a la IUSH</a>
         </div>
         <img src="/resources/assets/img/IUSH.png" class="image">
     </div>
