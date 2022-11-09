@@ -20,6 +20,25 @@ SitePersist
 
 A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Sitio Web](./docs/GUIA.md) ya que algunos contenidos tienen reglas especiales para poder ser agregados.
 
+# Instrucciones
+---
+
+ 1. Copiar el codigo y guardarlo con la Extension ***SQL***
+ 2. Iniciar los servicios de Apache y MySQL en XAMPP
+ 3. Ir a el localhost: http://localhost/phpmyadmin/
+ 4. Seleccionar **Nueva** en el panel lateral de ***phpMyAdmin***
+ 5. Colocar los siguientes Datos: 
+--		       **Nombre de la base de Datos:** sitepersist
+--		       **Cotejamiento:** utf8mb4_unicode_ci
+ 5. Le damos en **Crear**
+ 6. Abrimos la Base de Datos
+ 7. Le damo en Importar
+ 8. Seleccionar Archivo y Subes el archivo
+ 9. En la parte inferior dar click en continuar
+ 
+ *Listo, ya puedes ejecutar localmente esta pagina web*
+
+
 # Architecture & Infrastructure map
 
 [Direct Link to Map](https://lucid.app/publicSegments/view/89f254ef-faee-44d4-a3f1-924dc2c5434d/image.png)
