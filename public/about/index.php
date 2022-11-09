@@ -76,9 +76,10 @@
     <div class="banner">
         <div class="content">
             <h2>SitePersist</h2>
-            <p>Somos un proyecto en pro al sistema de gestión de solicitudes para reserva de los espacios y equipos tecnológicos de la IUSH, dandole uso a través de un aplicativo web para cualquier tipo de dispositivos, 
-                permitiendo la optimización de procesos de reservas de la universidad.
-  </p>
+            <p>SitePersist nace de un proyecto formativo de la Tecnica en Desarrollo de Software conformado por Mateo Londoño y Sebastian Lopez, estudiantes
+                de SENA en convenio con la Institución Universitaria Salazar y Herrera. <br>
+                SitePersist es simplicidad; un basico imprescindible que entiende que las gestiones se pueden hacer con claridad y orden al mismo tiempo.
+                Por esto, nos dedicamos a pensar en la institución de hoy, para brindar herramientas de alta utilidad para sus procesos internos.</p>
             <a href="IUSH/">Ir a la IUSH</a>
         </div>
         <img src="/resources/assets/img/IUSH.png" class="image">
