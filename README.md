@@ -23,7 +23,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 # Estructura de Base de Datos
 
 ---
-
+~~~
   CREATE TABLE `administradores` (
     `id` int(11) NOT NULL,
     `name` varchar(100) NOT NULL,
@@ -139,7 +139,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
   ALTER TABLE `reservas` ADD FOREIGN KEY (`user`) REFERENCES `usuarios` (`id`);
 
   ALTER TABLE `administradores` ADD FOREIGN KEY (`id`) REFERENCES `acciones` (`administrator`);
-
+~~~
 
 # Instrucciones
 ---
