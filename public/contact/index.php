@@ -75,14 +75,12 @@
     <?php include "../resources/partials/header--default.html" ?>
     <div class="banner">
         <div class="content">
-            <h2>Sistema de reservaciones</h2>
-            <p>Actualmente en la IUSH existe un sistema interno para gestionar las reservas de
-                espacios, la cual no cuenta con una interacción con el usuario, además de no ser
-                viable para reservas de personal externo a la IUSH. Para esto se propone Aplicativo
-                web con diseño responsive para todo tipo de dispositivos, con diferentes perfiles de
-                usuario que permita hacer el registro de solicitudes con la finalidad de ser gestionado
-                por un administrador, con registro de solicitudes que permita graficar el uso de los
-                espacios y equipos tecnológicos de la IUSH. </p>
+            <h2>SitePersist</h2>
+            <p>SitePersist nace de un proyecto formativo de la Tecnica en Desarrollo de Software conformado por Mateo Londoño y Sebastian Lopez, estudiantes
+                de SENA en convenio con la Institución Universitaria Salazar y Herrera. <br>
+                SitePersist es simplicidad; un basico imprescindible que entiende que las gestiones se pueden hacer con claridad y orden al mismo tiempo.
+                Por esto, nos dedicamos a pensar en la institución de hoy, para brindar herramientas de alta utilidad para sus procesos internos.
+            </p>
             <a href="IUSH/">Ir a la IUSH</a>
         </div>
         <img src="/resources/assets/img/IUSH.png" class="image">
