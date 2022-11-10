@@ -1,5 +1,10 @@
 # SitePersist
 
+💻 Desarrolladores
+
+| [<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L.</b></sub>](https://github.com/SebastianLopezOsorno-SENA) | [<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L.</b></sub>](https://github.com/Matthew1403) |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
 ## ¿Que es?
 
 SitePersist es un sistema de gestión de solicitudes para la reserva de espacios y equipos tecnológicos enfocada a la Institución Universitaria Salazar y Herrera, a través de un aplicativo web para cualquier tipo de dispositivos, permitiendo de esta manera la optimización de procesos de reservas de la Universidad.
@@ -14,6 +19,30 @@ SitePersist es un sistema de gestión de solicitudes para la reserva de espacios
 
 El sistema de gestión para la Reserva de espacios de la IUSH, posee una limitación de uso y viabilidad para la comunidad académica y personal externo.
 
+## Objetivo General
+
+Implementar un sistema de gestión de solicitudes para reserva de los espacios y equipos tecnológicos de la IUSH, a través de un aplicativo web para cualquier tipo de dispositivos, permitiendo la optimización de procesos de reservas de la Universidad.
+
+## Objetivos específicos
+
+- Establecer una plataforma web para las reservas, accediendo a la información desde cualquier dispositivo.
+- Generar estadísticas del uso de los diferentes espacios y equipos tecnológicos, a través de un dashboard dinámico e intuitivo, determinando la usabilidad media en un año.
+- Implementar un sistema de inventario, automatizando la gestión de los equipos electrónicos.
+
+## Alcance
+
+SitePersist puede ser ampliamente desarrollada. 
+Por ahora, la plataforma será adaptable a diferentes modelos de dispositivos y tendrá disponible el acceso tanto de usuarios como de administrador, contando con algunas funciones disponibles como galería e inventario de los diferentes espacios y equipos tecnológicos.
+
+## Estado del Arte
+
+En la actualidad existen diferentes sistemas de reservaciones con un mayor enfoque en el área turística, sistemas como smoobu y SiteMinder. También hay sistemas de reserva de áreas de trabajo como e-desk y tenea-talent, sistemas generales que no cumplen con la finalidad que se desea implementar en la IUSH.
+
+## Propuesta
+Aplicativo web con diseño responsive para todo tipo de dispositivos, con diferentes perfiles de usuario que permita hacer el registro de solicitudes con la finalidad de ser gestionado por un administrador, con registro de solicitudes que permita graficar el uso de los espacios y equipos tecnológicos de la IUSH.
+
+# Especificaciones Tecnicas
+
 ## Tecnologias Implementadas
 
 - apache (2.4.54)
@@ -21,14 +50,28 @@ El sistema de gestión para la Reserva de espacios de la IUSH, posee una limitac
 - composer (2.2.18)
 - nginx (1.22.0)
 
-💻 Desarrolladores
-
-| [<img src="https://avatars.githubusercontent.com/u/100486485?=4" width="100px;"/><br /><sub><b>Sebastian L.</b></sub>](https://github.com/SebastianLopezOsorno-SENA) | [<img src="https://avatars.githubusercontent.com/u/103140681?v=4" width="100px;"/><br /><sub><b>Mateo L.</b></sub>](https://github.com/Matthew1403) |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 # 📑 Guía de Uso
 
 A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Sitio Web](./docs/GUIA.md) ya que algunos contenidos tienen reglas especiales para poder ser agregados.
+
+# Instrucciones
+---
+
+ 1. Copiar el codigo y guardarlo con la Extension ***SQL***
+ 2. Iniciar los servicios de Apache y MySQL en XAMPP
+ 3. Ir a el localhost: http://localhost/phpmyadmin/
+ 4. Seleccionar **Nueva** en el panel lateral de ***phpMyAdmin***
+ 5. Colocar los siguientes Datos: 
+--		       **Nombre de la base de Datos:** sitepersist
+--		       **Cotejamiento:** utf8mb4_unicode_ci
+ 5. Le damos en **Crear**
+ 6. Abrimos la Base de Datos
+ 7. Le damo en Importar
+ 8. Seleccionar Archivo y Subes el archivo
+ 9. En la parte inferior dar click en continuar
+ 
+ *Listo, ya puedes ejecutar localmente esta pagina web*
 
 # Estructura de Base de Datos
 ## Especifiaciones base de datos
@@ -388,25 +431,6 @@ ALTER TABLE `seguridad`
   ADD CONSTRAINT `seguridad_ibfk_1` FOREIGN KEY (`user`) REFERENCES `usuarios` (`id`);
 COMMIT;
 ~~~
-
-# Instrucciones
----
-
- 1. Copiar el codigo y guardarlo con la Extension ***SQL***
- 2. Iniciar los servicios de Apache y MySQL en XAMPP
- 3. Ir a el localhost: http://localhost/phpmyadmin/
- 4. Seleccionar **Nueva** en el panel lateral de ***phpMyAdmin***
- 5. Colocar los siguientes Datos: 
---		       **Nombre de la base de Datos:** sitepersist
---		       **Cotejamiento:** utf8mb4_unicode_ci
- 5. Le damos en **Crear**
- 6. Abrimos la Base de Datos
- 7. Le damo en Importar
- 8. Seleccionar Archivo y Subes el archivo
- 9. En la parte inferior dar click en continuar
- 
- *Listo, ya puedes ejecutar localmente esta pagina web*
-
 
 # Architecture & Infrastructure map
 
