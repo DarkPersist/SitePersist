@@ -41,7 +41,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 
 
 --
--- Base de datos: `brsebv2xscv11gd8urzz`
+-- Base de datos: `SitePersist`
 --
 
 -- --------------------------------------------------------
