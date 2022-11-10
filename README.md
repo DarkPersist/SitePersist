@@ -23,19 +23,18 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 # Estructura de Base de Datos
 ## Especifiaciones base de datos
 
--- phpMyAdmin SQL Dump
--- version 4.7.1
--- https://www.phpmyadmin.net/
---
--- Servidor: brsebv2xscv11gd8urzz-mysql.services.clever-cloud.com
--- Tiempo de generación: 10-11-2022 a las 02:11:21
--- Versión del servidor: 8.0.15-5
--- Versión de PHP: 7.0.33-0ubuntu0.16.04.16
+- phpMyAdmin SQL Dump
+- version 4.7.1
+- https://www.phpmyadmin.net/
+- Servidor: brsebv2xscv11gd8urzz-mysql.services.clever-cloud.com
+- Tiempo de generación: 10-11-2022 a las 02:11:21
+- Versión del servidor: 8.0.15-5
+- Versión de PHP: 7.0.33-0ubuntu0.16.04.16
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
+- SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+- SET AUTOCOMMIT = 0;
+- START TRANSACTION;
+- SET time_zone = "+00:00";
 
 ---
 ~~~
