@@ -8,7 +8,7 @@ SitePersist es un sistema de gestión de solicitudes para la reserva de espacios
 
 <img src="http://adminsitepersist.herokuapp.com/resources/assets/img/logo--black.png">
 
-“Conectando espacios y experiencias”
+> “Conectando espacios y experiencias”
 
 ## Planteamiento del Problema
 
