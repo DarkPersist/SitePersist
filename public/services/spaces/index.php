@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center align-items-center mb-5">
+                    <div class="col-md-5 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem; background-color: #202020">
                             <img src="https://www.iush.edu.co/uploads/agencia_eventos.jpg?IUSH" class="card-img-top" alt="...">
                             <div class="card-body">
