@@ -435,18 +435,18 @@ COMMIT;
 
 # Arquitectura e Infraestrcutura 
 
-[Direct Link to Map](https://lucid.app/publicSegments/view/89f254ef-faee-44d4-a3f1-924dc2c5434d/image.png)
-![Mapa de Developing](/docs/general.png)
+[Direct Link to Map](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png)
+![Mapa de Developing](/docs/developing.png)
 
 ## Developing
 
 [Direct Link to Map](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png)
-![Mapa de Developing](/docs/developing.png)
+![Mapa de Developing](/docs/local.png)
 
 ## Staging
 
 [Direct Link to Map](https://lucid.app/publicSegments/view/275ec419-eb6e-4f41-bf58-8ddff551e644/image.png)
-![Mapa de Developing](/docs/developing.png)
+![Mapa de Developing](/docs/remote.png)
 
 ## Production
 
