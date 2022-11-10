@@ -2,7 +2,17 @@
 
 ## ¿Que es?
 
-SitePersist
+SitePersist es un sistema de gestión de solicitudes para la reserva de espacios y equipos tecnológicos enfocada a la Institución Universitaria Salazar y Herrera, a través de un aplicativo web para cualquier tipo de dispositivos, permitiendo de esta manera la optimización de procesos de reservas de la Universidad.
+
+## Eslogan  y Logo
+
+<img src="http://adminsitepersist.herokuapp.com/resources/assets/img/logo--black.png">
+
+“Conectando espacios y experiencias”
+
+## Planteamiento del Problema
+
+El sistema de gestión para la Reserva de espacios de la IUSH, posee una limitación de uso y viabilidad para la comunidad académica y personal externo.
 
 ## Tecnologias Implementadas
 
