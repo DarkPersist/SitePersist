@@ -28,7 +28,7 @@
                         <div class="card" style="width: 18rem; background-color: #202020">
                             <img src="https://www.iush.edu.co/uploads/header/escuelas.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Bloque Academico</h5>
+                                <h5 class="card-title">Bloque Académico</h5>
                                 <p class="card-text">Este bloque cuenta con diversos espacios académicos, donde se desarrollan la mayoría de las clases de la institución debido a que es el espacio perfecto para enseñar.</p>
                                 <a href="#" class="btn btn-primary">Ir allá</a>
                             </div>
