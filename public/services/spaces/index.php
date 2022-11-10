@@ -44,6 +44,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 d-flex justify-content-center align-items-center mb-5">
+                        <div class="card" style="width: 18rem; background-color: #202020">
+                            <img src="https://www.iush.edu.co/uploads/agencia_eventos.jpg?IUSH" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Auditorio</h5>
+                                <p class="card-text">Este espacio es el principal lugar de eventos de la universidad, ya que allí se lleva a cabo exposiciones, presentaciones, eventos externos donde se ve el fluir de la cultura y conocimiento.</p>
+                                <a href="#" class="btn btn-primary">Ir allá</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
