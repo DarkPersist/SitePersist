@@ -3,87 +3,132 @@
 
 <head>
     <?php include "../resources/assets/meta.html" ?>
-    <style>
-        .banner {
-            background: rgb(141, 4, 133);
-            background: #0D0D0D;
-            padding: 200px 100px 100px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .banner .content {
-            max-width: 700px;
-        }
-
-        .banner .content h2 {
-            font-size: 3em;
-            color: #fff;
-            margin-bottom: 10px;
-        }
-
-        .banner .content p {
-            font-size: 1em;
-            color: #fff;
-            margin: 10px;
-        }
-
-        .banner .content a {
-            display: inline-block;
-            background: #fff;
-            color: #000;
-            padding: 8px 20px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 20px;
-        }
-
-        .banner .image {
-            max-width: 400px;
-            margin-left: 30px;
-        }
-
-        @media(max-width:991px) {
-            .banner {
-                padding: 150px 20px 50px;
-                flex-direction: column-reverse;
-            }
-
-            .banner .image {
-                margin-left: 0;
-                max-width: 80%;
-                margin-bottom: 30px;
-            }
-
-            .banner .content h2 {
-                font-size: 2em;
-            }
-        }
-
-        @media(max-width:600px) {
-            .banner .image {
-                margin-top: 30px;
-                margin-bottom: 30px;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <?php include "../resources/partials/header--default.html" ?>
-    <div class="banner">
-        <div class="content">
-            <h2>¡Bienvenidos a SitePersist!</h2> <br>
-            <h3 class="text-light">¿Qué es SitePersist?</h3><br>
-            <p>SitePersist es un sistema de gestión de solicitudes para la reserva de espacios y equipos tecnológicos enfocada a la Institución Universitaria Salazar y Herrera, 
-                a través de un aplicativo web para cualquier tipo de dispositivos, permitiendo de esta manera la optimización de procesos de reservas de la Universidad.
- </p>
-            <a href="https://sitepersist.herokuapp.com/login/">Ir a inicio de sesión</a>
-        </div>
-        <img src="/resources/assets/img/IUSH.png" class="image">
-    </div>
+    <main id="main">
+
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about section-bg">
+            <div class="row" class="section-title">
+            </div>
+            <!--NUEVO FINAL-->
+            <div class="container">
+
+                <div class="row">
+                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+                    <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+                        <div class="content d-flex flex-column justify-content-center">
+                            <h3 data-aos="fade-in" data-aos-delay="100">Sobre nosotros</h3>
+                            <p data-aos="fade-in">
+                                En Instinto Acuático ofrecemos servicios deportivos de formación, recreación, fortalecimiento y rehabilitación.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                    <i class="bx bx-dice-3"></i>
+                                    <h4>Enseñanza lúdica</h4>
+                                    <p>Es importante para nosotros que el momento de aprender, sea también un momento para divertirse.</p>
+                                </div>
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="bx bx-swim"></i>
+                                    <h4>Clases personalizadas</h4>
+                                    <p>Las competencias se desarrollan de acuerdo a las capacidades y necesidades de cada uno de nuestros estudiantes.</p>
+                                </div>
+                                <div class="col-md-6 icon-box" data-aos="fade-up">
+                                    <i class="bx bx-receipt"></i>
+                                    <h4>Alta Calidad</h4>
+                                    <p>Contamos con un personal altamente capacitado para dictar las clases.</p>
+                                </div>
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                    <i class="bx bx-been-here"></i>
+                                    <h4>Nuestro servicio</h4>
+                                    <p>Las clases se dictan en la zona húmeda de tu unidad residencial, llegamos a lugares en Medellín y sus alrededores cercanos.</p>
+                                </div>
+                            </div>
+                        </div><!-- End .content-->
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-left">
+
+                        <body style="text-align: justify;">
+                            <h3>Un espacio para tí</h3>
+                            <p> Decidimos crear un espacio para que conozcas nuestros servicios y estés en contacto con nosotros.</p>
+                            <p> Conoce nuestros servicios de natación, visita nuestro portafolio de servicios y nuestra vitrina virtual.</p>
+                            <p>Inicia sesión para que tengas acceso a más contenido de Instinto Acuático, allí podrás hacer solicitudes para contactarnos y solicitar nuestros productos y servicios.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Contacto</h2>
+                    <p>Ponte en contacto con Instinto Acuático.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                        <img src="assets/img/inscripciones.jpeg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+                        <div class="col-md-12">
+                            <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                                <i class="bx bxl-instagram"></i>
+                                <h3>Instagram</h3>
+                                <p>Nuestra red social</p>
+                                <a href="https://www.instagram.com/instintoacuatico/" target="_blank">
+                                    <p>@instintoacuatico</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                                <i class="bx bxl-whatsapp"></i>
+                                <h3>Escríbenos</h3>
+                                <p>Nuestro WhatsApp</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573136083995&text=Comunicate+con+Instinto+Acuatico&app_absent=0" target="_blank">
+                                    <p>+57 313 6083995</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Puedes enviarnos una solicitud</h3>
+                                <p>Si deseas que te contactemos puedes llenar la solicitud de contacto.</p>
+                                <a href="contacto.php">
+                                    <p>Solicitud de Contacto</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+        </section><!-- End Contact Section -->
+
+
+
+    </main><!-- End #main -->
     <?php include "../resources/partials/footer--default.html" ?>
 </body>
 
