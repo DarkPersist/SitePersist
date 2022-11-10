@@ -433,7 +433,7 @@ ALTER TABLE `seguridad`
 COMMIT;
 ~~~
 
-# Architecture & Infrastructure map
+# Arquitectura e Infraestrcutura 
 
 [Direct Link to Map](https://lucid.app/publicSegments/view/89f254ef-faee-44d4-a3f1-924dc2c5434d/image.png)
 ![Mapa de Developing](/docs/general.png)
