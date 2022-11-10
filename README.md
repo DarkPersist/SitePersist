@@ -58,7 +58,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 # Instrucciones
 ---
 
- 1. Copiar el codigo y guardarlo con la Extension ***SQL***
+ 1. Copiar el codigo de estructura de la base de datos y guardarlo con la Extension ***SQL***
  2. Iniciar los servicios de Apache y MySQL en XAMPP
  3. Ir a el localhost: http://localhost/phpmyadmin/
  4. Seleccionar **Nueva** en el panel lateral de ***phpMyAdmin***
@@ -89,6 +89,7 @@ A nivel de edición contenido hay que tener en cuenta una [Guía de Uso del Siti
 - START TRANSACTION;
 - SET time_zone = "+00:00";
 
+# Codigo SQL
 ---
 ~~~
 
