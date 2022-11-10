@@ -81,6 +81,7 @@
                 a través de un aplicativo web para cualquier tipo de dispositivos, permitiendo de esta manera la optimización de procesos de reservas de la Universidad.
             </p>
             <a href="https://sitepersist.herokuapp.com/login/">Ir a inicio de sesión</a>
+            <a href="https://adminsitepersist.herokuapp.com/login/#">Ir a inicio de sesión de administrador</a>
         </div>
         <img src="/resources/assets/img/IUSH.png" class="image">
     </div>
