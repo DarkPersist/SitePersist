@@ -36,10 +36,10 @@
                     </div>
                     <div class="col-md-4 d-flex justify-content-center align-items-center mb-5">
                         <div class="card" style="width: 18rem; background-color: #202020">
-                            <img src="http://es.pecc-mexico.org/wp-content/uploads/2020/11/d437da2a54918895cf59a3362a0099ec-album-de-fotos-plano-icono-by-vexels.png" class="card-img-top" alt="...">
+                            <img src="https://www.iush.edu.co/uploads/interesinstitucional/2022/becas-coegios-arq.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Bloque General</h5>
+                                <p class="card-text">Este bloque cuenta con espacios como la cafetería, biblioteca, salones académicos, salones de artes donde se desarrollan clases donde se deja volar la imaginación y surgir la creatividad.</p>
                                 <a href="#" class="btn btn-primary">Ir allá</a>
                             </div>
                         </div>
